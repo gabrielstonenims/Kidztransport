@@ -1,0 +1,40 @@
+.box .box-back {
+  overflow: hidden;
+}
+
+.box .box-back img {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  max-width: 100%;
+}
+
+.box .box-back img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.box .details {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.box .details .content {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=team.css.map */

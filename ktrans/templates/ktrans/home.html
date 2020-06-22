@@ -1,0 +1,265 @@
+{% extends "ktrans/base.html"%}
+{% load static %}
+{% block content %}
+<main>
+    <section class="showcase">
+        <!-- <div class="showcase-overlay"></div>
+        <div class="showcase-back animated bounceInLeft"></div> -->
+        <div class="showcase-contents">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="mainh2">
+                        Kidz Transport
+                        <!-- <svg id="somelogo" width="1227" height="115" viewBox="0 0 1227 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0.927979" y="0.471985" width="1226" height="114" fill="black">
+                        <rect fill="white" x="0.927979" y="0.471985" width="1226" height="114"/>
+                        <path d="M64.536 108L30.552 63.36V108H5.92798V6.91198H30.552V51.264L64.248 6.91198H93.192L54.024 56.448L94.632 108H64.536Z"/>
+                        <path d="M130.958 6.91198V108H106.334V6.91198H130.958Z"/>
+                        <path d="M186.675 6.91198C197.331 6.91198 206.643 9.02398 214.611 13.248C222.579 17.472 228.723 23.424 233.043 31.104C237.459 38.688 239.667 47.472 239.667 57.456C239.667 67.344 237.459 76.128 233.043 83.808C228.723 91.488 222.531 97.44 214.467 101.664C206.499 105.888 197.235 108 186.675 108H148.803V6.91198H186.675ZM185.091 86.688C194.403 86.688 201.651 84.144 206.835 79.056C212.019 73.968 214.611 66.768 214.611 57.456C214.611 48.144 212.019 40.896 206.835 35.712C201.651 30.528 194.403 27.936 185.091 27.936H173.427V86.688H185.091Z"/>
+                        <path d="M279.636 87.84H323.124V108H251.7V89.28L294.9 27.072H251.7V6.91198H323.124V25.632L279.636 87.84Z"/>
+                        <path d="M442.445 6.91198V26.64H415.661V108H391.037V26.64H364.253V6.91198H442.445Z"/>
+                        <path d="M506.355 108L485.331 69.84H479.427V108H454.803V6.91198H496.131C504.099 6.91198 510.867 8.30398 516.435 11.088C522.099 13.872 526.323 17.712 529.107 22.608C531.891 27.408 533.283 32.784 533.283 38.736C533.283 45.456 531.363 51.456 527.523 56.736C523.779 62.016 518.211 65.76 510.819 67.968L534.147 108H506.355ZM479.427 52.416H494.691C499.203 52.416 502.563 51.312 504.771 49.104C507.075 46.896 508.227 43.776 508.227 39.744C508.227 35.904 507.075 32.88 504.771 30.672C502.563 28.464 499.203 27.36 494.691 27.36H479.427V52.416Z"/>
+                        <path d="M611.669 90.144H573.94L567.893 108H542.117L578.693 6.91198H607.205L643.781 108H617.716L611.669 90.144ZM605.333 71.136L592.805 34.128L580.42 71.136H605.333Z"/>
+                        <path d="M745.344 108H720.72L679.536 45.648V108H654.912V6.91198H679.536L720.72 69.552V6.91198H745.344V108Z"/>
+                        <path d="M799.77 109.008C792.378 109.008 785.754 107.808 779.898 105.408C774.042 103.008 769.338 99.456 765.786 94.752C762.33 90.048 760.506 84.384 760.314 77.76H786.522C786.906 81.504 788.202 84.384 790.41 86.4C792.618 88.32 795.498 89.28 799.05 89.28C802.698 89.28 805.578 88.464 807.69 86.832C809.802 85.104 810.858 82.752 810.858 79.776C810.858 77.28 809.994 75.216 808.266 73.584C806.634 71.952 804.57 70.608 802.074 69.552C799.674 68.496 796.218 67.296 791.706 65.952C785.178 63.936 779.85 61.92 775.722 59.904C771.594 57.888 768.042 54.912 765.066 50.976C762.09 47.04 760.602 41.904 760.602 35.568C760.602 26.16 764.01 18.816 770.826 13.536C777.642 8.15998 786.522 5.47198 797.466 5.47198C808.602 5.47198 817.578 8.15998 824.394 13.536C831.21 18.816 834.858 26.208 835.338 35.712H808.698C808.506 32.448 807.306 29.904 805.098 28.08C802.89 26.16 800.058 25.2 796.602 25.2C793.626 25.2 791.226 26.016 789.402 27.648C787.578 29.184 786.666 31.44 786.666 34.416C786.666 37.68 788.202 40.224 791.274 42.048C794.346 43.872 799.146 45.84 805.674 47.952C812.202 50.16 817.482 52.272 821.514 54.288C825.642 56.304 829.194 59.232 832.17 63.072C835.146 66.912 836.634 71.856 836.634 77.904C836.634 83.664 835.146 88.896 832.17 93.6C829.29 98.304 825.066 102.048 819.498 104.832C813.93 107.616 807.354 109.008 799.77 109.008Z"/>
+                        <path d="M928.827 39.456C928.827 45.312 927.483 50.688 924.795 55.584C922.107 60.384 917.979 64.272 912.411 67.248C906.843 70.224 899.931 71.712 891.675 71.712H876.411V108H851.787V6.91198H891.675C899.739 6.91198 906.555 8.30398 912.123 11.088C917.691 13.872 921.867 17.712 924.651 22.608C927.435 27.504 928.827 33.12 928.827 39.456ZM889.803 52.128C894.507 52.128 898.011 51.024 900.315 48.816C902.619 46.608 903.771 43.488 903.771 39.456C903.771 35.424 902.619 32.304 900.315 30.096C898.011 27.888 894.507 26.784 889.803 26.784H876.411V52.128H889.803Z"/>
+                        <path d="M989.455 109.008C979.951 109.008 971.215 106.8 963.247 102.384C955.375 97.968 949.087 91.824 944.383 83.952C939.775 75.984 937.471 67.056 937.471 57.168C937.471 47.28 939.775 38.4 944.383 30.528C949.087 22.656 955.375 16.512 963.247 12.096C971.215 7.67999 979.951 5.47198 989.455 5.47198C998.959 5.47198 1007.65 7.67999 1015.52 12.096C1023.49 16.512 1029.73 22.656 1034.24 30.528C1038.85 38.4 1041.15 47.28 1041.15 57.168C1041.15 67.056 1038.85 75.984 1034.24 83.952C1029.63 91.824 1023.39 97.968 1015.52 102.384C1007.65 106.8 998.959 109.008 989.455 109.008ZM989.455 86.544C997.519 86.544 1003.95 83.856 1008.75 78.48C1013.65 73.104 1016.09 66 1016.09 57.168C1016.09 48.24 1013.65 41.136 1008.75 35.856C1003.95 30.48 997.519 27.792 989.455 27.792C981.295 27.792 974.767 30.432 969.871 35.712C965.071 40.992 962.671 48.144 962.671 57.168C962.671 66.096 965.071 73.248 969.871 78.624C974.767 83.904 981.295 86.544 989.455 86.544Z"/>
+                        <path d="M1106.4 108L1085.38 69.84H1079.47V108H1054.85V6.91198H1096.18C1104.15 6.91198 1110.91 8.30398 1116.48 11.088C1122.15 13.872 1126.37 17.712 1129.15 22.608C1131.94 27.408 1133.33 32.784 1133.33 38.736C1133.33 45.456 1131.41 51.456 1127.57 56.736C1123.83 62.016 1118.26 65.76 1110.87 67.968L1134.19 108H1106.4ZM1079.47 52.416H1094.74C1099.25 52.416 1102.61 51.312 1104.82 49.104C1107.12 46.896 1108.27 43.776 1108.27 39.744C1108.27 35.904 1107.12 32.88 1104.82 30.672C1102.61 28.464 1099.25 27.36 1094.74 27.36H1079.47V52.416Z"/>
+                        <path d="M1221.51 6.91198V26.64H1194.72V108H1170.1V26.64H1143.32V6.91198H1221.51Z"/>
+                        </mask>
+                        <path d="M64.536 108L30.552 63.36V108H5.92798V6.91198H30.552V51.264L64.248 6.91198H93.192L54.024 56.448L94.632 108H64.536Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M130.958 6.91198V108H106.334V6.91198H130.958Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M186.675 6.91198C197.331 6.91198 206.643 9.02398 214.611 13.248C222.579 17.472 228.723 23.424 233.043 31.104C237.459 38.688 239.667 47.472 239.667 57.456C239.667 67.344 237.459 76.128 233.043 83.808C228.723 91.488 222.531 97.44 214.467 101.664C206.499 105.888 197.235 108 186.675 108H148.803V6.91198H186.675ZM185.091 86.688C194.403 86.688 201.651 84.144 206.835 79.056C212.019 73.968 214.611 66.768 214.611 57.456C214.611 48.144 212.019 40.896 206.835 35.712C201.651 30.528 194.403 27.936 185.091 27.936H173.427V86.688H185.091Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M279.636 87.84H323.124V108H251.7V89.28L294.9 27.072H251.7V6.91198H323.124V25.632L279.636 87.84Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M442.445 6.91198V26.64H415.661V108H391.037V26.64H364.253V6.91198H442.445Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M506.355 108L485.331 69.84H479.427V108H454.803V6.91198H496.131C504.099 6.91198 510.867 8.30398 516.435 11.088C522.099 13.872 526.323 17.712 529.107 22.608C531.891 27.408 533.283 32.784 533.283 38.736C533.283 45.456 531.363 51.456 527.523 56.736C523.779 62.016 518.211 65.76 510.819 67.968L534.147 108H506.355ZM479.427 52.416H494.691C499.203 52.416 502.563 51.312 504.771 49.104C507.075 46.896 508.227 43.776 508.227 39.744C508.227 35.904 507.075 32.88 504.771 30.672C502.563 28.464 499.203 27.36 494.691 27.36H479.427V52.416Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M611.669 90.144H573.94L567.893 108H542.117L578.693 6.91198H607.205L643.781 108H617.716L611.669 90.144ZM605.333 71.136L592.805 34.128L580.42 71.136H605.333Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M745.344 108H720.72L679.536 45.648V108H654.912V6.91198H679.536L720.72 69.552V6.91198H745.344V108Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M799.77 109.008C792.378 109.008 785.754 107.808 779.898 105.408C774.042 103.008 769.338 99.456 765.786 94.752C762.33 90.048 760.506 84.384 760.314 77.76H786.522C786.906 81.504 788.202 84.384 790.41 86.4C792.618 88.32 795.498 89.28 799.05 89.28C802.698 89.28 805.578 88.464 807.69 86.832C809.802 85.104 810.858 82.752 810.858 79.776C810.858 77.28 809.994 75.216 808.266 73.584C806.634 71.952 804.57 70.608 802.074 69.552C799.674 68.496 796.218 67.296 791.706 65.952C785.178 63.936 779.85 61.92 775.722 59.904C771.594 57.888 768.042 54.912 765.066 50.976C762.09 47.04 760.602 41.904 760.602 35.568C760.602 26.16 764.01 18.816 770.826 13.536C777.642 8.15998 786.522 5.47198 797.466 5.47198C808.602 5.47198 817.578 8.15998 824.394 13.536C831.21 18.816 834.858 26.208 835.338 35.712H808.698C808.506 32.448 807.306 29.904 805.098 28.08C802.89 26.16 800.058 25.2 796.602 25.2C793.626 25.2 791.226 26.016 789.402 27.648C787.578 29.184 786.666 31.44 786.666 34.416C786.666 37.68 788.202 40.224 791.274 42.048C794.346 43.872 799.146 45.84 805.674 47.952C812.202 50.16 817.482 52.272 821.514 54.288C825.642 56.304 829.194 59.232 832.17 63.072C835.146 66.912 836.634 71.856 836.634 77.904C836.634 83.664 835.146 88.896 832.17 93.6C829.29 98.304 825.066 102.048 819.498 104.832C813.93 107.616 807.354 109.008 799.77 109.008Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M928.827 39.456C928.827 45.312 927.483 50.688 924.795 55.584C922.107 60.384 917.979 64.272 912.411 67.248C906.843 70.224 899.931 71.712 891.675 71.712H876.411V108H851.787V6.91198H891.675C899.739 6.91198 906.555 8.30398 912.123 11.088C917.691 13.872 921.867 17.712 924.651 22.608C927.435 27.504 928.827 33.12 928.827 39.456ZM889.803 52.128C894.507 52.128 898.011 51.024 900.315 48.816C902.619 46.608 903.771 43.488 903.771 39.456C903.771 35.424 902.619 32.304 900.315 30.096C898.011 27.888 894.507 26.784 889.803 26.784H876.411V52.128H889.803Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M989.455 109.008C979.951 109.008 971.215 106.8 963.247 102.384C955.375 97.968 949.087 91.824 944.383 83.952C939.775 75.984 937.471 67.056 937.471 57.168C937.471 47.28 939.775 38.4 944.383 30.528C949.087 22.656 955.375 16.512 963.247 12.096C971.215 7.67999 979.951 5.47198 989.455 5.47198C998.959 5.47198 1007.65 7.67999 1015.52 12.096C1023.49 16.512 1029.73 22.656 1034.24 30.528C1038.85 38.4 1041.15 47.28 1041.15 57.168C1041.15 67.056 1038.85 75.984 1034.24 83.952C1029.63 91.824 1023.39 97.968 1015.52 102.384C1007.65 106.8 998.959 109.008 989.455 109.008ZM989.455 86.544C997.519 86.544 1003.95 83.856 1008.75 78.48C1013.65 73.104 1016.09 66 1016.09 57.168C1016.09 48.24 1013.65 41.136 1008.75 35.856C1003.95 30.48 997.519 27.792 989.455 27.792C981.295 27.792 974.767 30.432 969.871 35.712C965.071 40.992 962.671 48.144 962.671 57.168C962.671 66.096 965.071 73.248 969.871 78.624C974.767 83.904 981.295 86.544 989.455 86.544Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M1106.4 108L1085.38 69.84H1079.47V108H1054.85V6.91198H1096.18C1104.15 6.91198 1110.91 8.30398 1116.48 11.088C1122.15 13.872 1126.37 17.712 1129.15 22.608C1131.94 27.408 1133.33 32.784 1133.33 38.736C1133.33 45.456 1131.41 51.456 1127.57 56.736C1123.83 62.016 1118.26 65.76 1110.87 67.968L1134.19 108H1106.4ZM1079.47 52.416H1094.74C1099.25 52.416 1102.61 51.312 1104.82 49.104C1107.12 46.896 1108.27 43.776 1108.27 39.744C1108.27 35.904 1107.12 32.88 1104.82 30.672C1102.61 28.464 1099.25 27.36 1094.74 27.36H1079.47V52.416Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        <path d="M1221.51 6.91198V26.64H1194.72V108H1170.1V26.64H1143.32V6.91198H1221.51Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
+                        </svg> -->
+                        </h2>
+                    <p class="intro-pickup animated bounceInRight">Kids Pick-Up & Drop-Off Services</p>
+                    <p class="intro-pickup animated bounceInLeft">Helping kids Reach their Destination</p>
+                    <br>
+                    <a href="{% url 'student_register' %}">Register Student</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of showcase -->
+    <br>
+    <!-- what you need to know -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h3>What you need to know</h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="whattoknow">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-6 col-md-4 knowthis boxes">
+                    <div class="knowthis-img">
+                        <img class="img-fluid" src="{% static 'transport/images/servicearea_icon.png' %}" alt="">
+                    </div>
+                    <br>
+                    <div class="knowthis-text z-depth-1-half">
+                        <h3 class="text-center">Serving Areas</h3>
+                        <p>We serve only these areas.</p>
+                        <p class="areas">Bolingbrook | Woodridge | Romeoville | Plainfield | Joliet</p>
+                    </div>
+                </div>
+                <br>
+                <div class="col-xs-6 col-sm-6 col-md-4 knowthis boxes">
+                    <div class="knowthis-img">
+                        <img class="img-fluid" src="{% static 'transport/images/Download-Taxi-Driver-PNG-File.png' %}"
+                            alt="">
+                    </div>
+                    <br>
+                    <div class="knowthis-text z-depth-1-half">
+                        <h3 class="text-center">Our Drivers</h3>
+                        <p>All our drivers are certified with a passenget endorsed license.Drivers are taken via series
+                            of test ....</p>
+                        <a href="{% url 'our_drivers' %}">More</a>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div class="col-xs-6 col-sm-6 col-md-4 knowthis boxes">
+                    <div class="knowthis-img">
+                        <img class="img-fluid" src="{% static 'transport/images/Parents-PNG-Transparent-Image.png' %}"
+                            alt="">
+                    </div>
+                    <br>
+                    <div class="knowthis-text z-depth-1-half">
+                        <h3 class="text-center">Parents</h3>
+                        <p>Our daily pick-ups and drop-offs would be sent to each parent when the action is due.</p>
+                        <a href="{% url 'parents' %}">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <hr class="my-4">
+        </div>
+        <br>
+    </section>
+    <!-- what you need to know -->
+    <!-- about us -->
+    <br>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h3>About Us</h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="about-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-10 ml-auto mr-auto">
+                    <ul class="nav nav-tabs md-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="vehicles-tab" data-toggle="tab" href="#vehicles" role="tab"
+                                aria-controls="vehicles" aria-selected="true">Vehicles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="fleet-tab" data-toggle="tab" href="#fleet" role="tab"
+                                aria-controls="fleet" aria-selected="false">Fleet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="operations-tab" data-toggle="tab" href="#operations" role="tab"
+                                aria-controls="operations" aria-selected="false">Operations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="safety-tab" data-toggle="tab" href="#safety" role="tab"
+                                aria-controls="safety" aria-selected="false">Safety Records</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="vehicles" role="tabpanel"
+                            aria-labelledby="vehicles-tab">
+                            <div class="row text-center">
+                                <div class="col-12">
+                                    <div class="jumbotron">
+                                        <p>Our fleet includes newer model Dodge Caravans and Chevy Starcraft buses. Our
+                                            vehicles are
+                                            inspected on a weekly basis for tire pressure and tread, all signal lighting,
+                                            fluid
+                                            levels, brake pads, and other general operational mechanisms in order to repair
+                                            and
+                                            maintain our fleet at the highest level. We utilize a certified licensed
+                                            mechanic to
+                                            address any vehicle repairs and issues. Our vehicles undergo Illinois Department
+                                            of
+                                            Transportation safety inspections every six months. Our maintenance records are
+                                            stored
+                                            in a computerized database system that assists us in tracking and monitoring our
+                                            fleet.
+                                            All of our vehicles are stored in a safe and secure lot.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="fleet" role="tabpanel" aria-labelledby="fleet-tab">
+                            <div class="row text-center">
+                                <div class="col-12">
+                                    <div class="jumbotron">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Exclusively made up of newer model minivans and
+                                                small buses,
+                                                including wheelchair accessible vehicles.</li>
+                                            <li class="list-group-item">Clearly identified with Kidztransport signage.</li>
+                                            <li class="list-group-item">Maintained on a daily basis by a highly qualified
+                                                maintenance staff.</li>
+                                            <li class="list-group-item">Equipped with two-way radios, a GPS monitoring
+                                                system, and
+                                                audio/video recording devices with 30-day backup.</li>
+                                            <li class="list-group-item">Kept in a clean, secure location.</li>
+                                            <li class="list-group-item">Inspected and Certified by the Illinois Department
+                                                of
+                                                Transportation every six months.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="operations" role="tabpanel" aria-labelledby="operations-tab">
+                            <div class="row text-center">
+                                <div class="col-12">
+                                    <div class="jumbotron">
+
+                                        <p>Our operations are designed to offer school districts, parents and students a
+                                            simple and
+                                            efficient method to coordinate student transportation. School district
+                                            transportation
+                                            requests are received and processed by our dispatch department in a timely
+                                            manner so
+                                            that most requests can be met within one to two days. Our dispatchers contact
+                                            parents to
+                                            inform them of pick-up and drop-off times as well as introducing them to our
+                                            company and
+                                            answering any questions they may have. We have bilingual staff available to
+                                            assist in
+                                            communication with families if necessary. Our transportation staff is available
+                                            from
+                                            5:00 a.m. until 5:30 p.m. (or when the last vehicle returns). We have an
+                                            answering
+                                            service available to take calls outside of these hours.
+                                            Our routes are currently planned by our dispatch staff using routing technology
+                                            to
+                                            provide the most efficient and cost-effective routes. When possible, we
+                                            coordinate
+                                            routes between districts as a way to save money for participating districts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="safety" role="tabpanel" aria-labelledby="safety-tab">
+                            <div class="row text-center">
+                                <div class="col-12">
+                                    <div class="jumbotron">
+
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Kidztransport Services averages 130,000 miles of student
+                                                transportation a month and have never had a major accident with any injuries
+                                                since opening in 2011.</li>
+                                            <li class="list-group-item">Federal regulations allow the use of vans to
+                                                transport students. Kidztransport Services’ vans meet the same strict safety
+                                                requirements as school buses</li>
+                                            <li class="list-group-item">Kidztransport Services’ drivers are specially trained and
+                                                required to meet higher qualification, training, and testing standards as
+                                                compared to other drivers on the road.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <br>
+</main>
+<footer>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 ml-auto mr-auto">
+                &copy; 2019 All rights reserved:<span class="spec">Kidztransport.com</span>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}

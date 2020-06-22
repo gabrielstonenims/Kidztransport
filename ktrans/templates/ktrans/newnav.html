@@ -1,0 +1,43 @@
+{% load static %}
+<div class="main-nav">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-logo mr-4" style="color: white;font-weight: bold;">
+                Kidz <span><img width="50" height="50" src="{% static 'ktrans/images/animated-school-bus-29.gif'%}" alt=""></span>Transport
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="{% url 'home'%}">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="{% url 'our_drivers'%}">Our Drivers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="{% url 'service_areas' %}">Serving Areas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="{% url 'parents' %}">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="{% url 'team' %}">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="{% url 'contact' %}">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="{% url 'about' %}">About Us</a>
+                    </li>
+                    
+                </ul>
+              
+            </div>
+        </div>
+    </nav>
+</div>

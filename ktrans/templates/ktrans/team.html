@@ -1,0 +1,26 @@
+{% extends "ktrans/base.html" %}
+{% block content %}
+{% load static %}
+<div class="container deteam">
+    <br>
+    <h3 class="text-center">Meet the team</h3>
+    <br>
+    <!-- <h3>chief executive officer(CEO)</h3> -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 mb-3">
+            <div class="card box">
+                <div class="box-back">
+                    <img class="img-fluid z-depth-1-half" src="{% static 'transport/images/alice.jpeg' %}" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Ms.Alice(CEO)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+<br>
+{% endblock %}

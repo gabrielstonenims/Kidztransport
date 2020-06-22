@@ -1,0 +1,30 @@
+{% extends 'ktrans/base.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+<br>
+<div class="container student-registration">
+  <!-- <h3 class="text-center">Student's Registration</h3> -->
+  <div class="jumbotron mt-4">
+    <div class="row">
+      <div class="col-md-8 mr-auto ml-auto mt-2">
+        <a class="butt" href="{% static 'transport/Transportation-Request-Form.pdf' %}" download="Transport Request Form" target="_blank">Download <i class="far fa-file-pdf"></i></a>
+        <div class=" ">
+          <form method="post" id="myform" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+              <legend class="border-bottom mb-3 mt-2 text-center" style="">Student Registration</legend>
+              {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+              <button class="butt" type="submit" id="registerButton">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<br>
+{% endblock %}

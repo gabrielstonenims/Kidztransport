@@ -1,0 +1,32 @@
+{% extends "ktrans/base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container contact-kidztransport">
+    <br>
+    <!-- <h3 class="text-center">Contact Kidz Transport</h3> -->
+    <br>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-8 col-xs-6 col-sm-6 m-3 mr-auto">
+                <form method="post" action="." id="contactform" class="mb-4">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="border-bottom mb-3 mt-2 text-center" >Contact Us</legend>
+                        {{ qform|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="butt" type="submit" id="registerButton">Submit</button>
+                    </div>
+                </form>
+                <br>
+
+                <i class="fas fa-phone mr-2"></i> +1(773) 349-0780 <br>
+                <i class="fas fa-envelope mr-2"></i> kidztransports@gmail.com
+              
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+<br><br>
+{% endblock %}

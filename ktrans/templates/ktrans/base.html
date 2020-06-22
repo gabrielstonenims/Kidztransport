@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="{% static 'ktrans/images/forico.ico' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'ktrans/css/bootstrap.min.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/mdb.min.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/swiper.min.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/home.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/team.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/ourdrivers.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/fontawesome-all.min.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/animate.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'ktrans/css/lightbox.min.css'%}" type="text/css">
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+  <title>
+    KTransport
+  </title>
+</head>
+
+<body class="transport-lp">
+
+  {% include "ktrans/newnav.html" %}
+  {% block content %}
+  {% endblock %}
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="{% static 'ktrans/js/jquery-3.4.1.min.js'%}"></script>
+  <script src="{% static 'ktrans/js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'ktrans/js/mdb.min.js'%}"></script>
+  <script src="{% static 'ktrans/js/jscode.js'%}"></script>
+  <script src="{% static 'ktrans/js/fornav.js'%}"></script>
+  <script src="{% static 'ktrans/js/swiper.min.js'%}"></script>
+  <script src="{% static 'ktrans/js/fontawesome-all.min.js'%}"></script>
+  <script src="{% static 'ktrans/js/lightbox-plus-jquery.min.js'%}"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+
+  <!-- <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script> -->
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background: #a3a3a3;
+    // color: #fff;
+}
+
+$primary:#ddd;
+$dark:#333;
+$light:#fff;
+$shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+img {
+    max-width: 100%;
+}
+
+@mixin setflex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+@mixin  mini_btn {
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgba(206, 153, 6, 0.959);
+    transition: all 1s ease;
+    color: white;
+    &:hover{
+        // color: white;
+        background-color: rgba(206, 153, 6, 0.712);
+    }
+}
+
+h3 {
+    padding: 20px;
+    font-weight: bold;
+}
+
+// showcase
+section.showcase {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+
+    .showcase-overlay {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background: #030113;
+        opacity: 0.55;
+    }
+
+    .showcase-back {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background: url('../images/animated-school-bus-29.gif');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .showcase-contents {
+        position: relative;
+        color: $light;
+        padding: 20px;
+        // @include setflex(column);
+        text-align: center;
+
+        h2 {
+            margin-top: 180px;
+            font-weight: bold;
+            padding: 20px;
+            font-size: 6rem;
+            text-shadow: 4px 4px silver;
+        }
+
+        p.intro-pickup {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        a {
+            @include mini_btn();
+        }
+    }
+}
+
+// what you need to know
+section.whattoknow {
+    padding: 20px;
+
+    .boxes {
+        padding: 20px;
+
+        img {
+            width: 100%;
+            // border-radius: 50%;
+        }
+
+        .knowthis-text {
+            padding: 20px;
+            // box-shadow: $shadow;
+            background: #d3d3d3;
+
+            p.areas {
+                font-weight: bold;
+                text-decoration: underline;
+                text-decoration-color: rgb(219, 17, 17);
+            }
+
+            a {
+                @include mini_btn();
+            }
+        }
+    }
+}
+
+// about us
+
+section.about-us {
+    padding: 20px;
+
+    ul li a {
+        color: black;
+    }
+}
+
+// footer
+
+footer {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background: $dark;
+    color: $primary;
+
+    span {
+        font-weight: bold;
+        color: #d3d3d3;
+    }
+}
+
+svg#somelogo {
+    @include setflex(column);
+    // color: wheat;
+    width: 100%;
+    font-weight: bold;
+    
+    path:nth-child(2) {
+        stroke-dasharray: 538.947265625;
+        stroke-dashoffset: 538.947265625;
+        animation: line-anim 2s ease forwards;
+        // animation: textfill 0.5s ease forwards 3.5s;
+        // animation: fill 0.5s ease forwards 3.5s;
+    }
+
+    path:nth-child(3) {
+        stroke-dasharray: 251.4240264892578;
+        stroke-dashoffset: 251.4240264892578;
+        animation: line-anim 2s ease forwards 0.3s;
+        // animation: textfill 1s ease forwards 4s;
+    }
+
+    path:nth-child(4) {
+        stroke-dasharray: 518.4912109375;
+        stroke-dashoffset: 518.4912109375;
+        animation: line-anim 2s ease forwards 0.6s;
+        // animation: textfill 1.5s ease forwards 4.5s;
+    }
+
+    path:nth-child(5) {
+        stroke-dasharray: 458.9344787597656;
+        stroke-dashoffset: 458.9344787597656;
+        animation: line-anim 2s ease forwards 0.9s;
+        // animation: textfill 2s ease forwards 5s;
+    }
+
+    path:nth-child(6) {
+        stroke-dasharray: 358.56005859375;
+        stroke-dashoffset: 358.56005859375;
+        animation: line-anim 2s ease forwards 1.2s;
+        // animation: textfill 2.5s ease forwards 5.5s;
+    }
+
+    path:nth-child(7) {
+        stroke-dasharray: 521.3292846679688;
+        stroke-dashoffset: 521.3292846679688;
+        animation: line-anim 2s ease forwards 1.5s;
+        // animation: textfill 3s ease forwards 6s;
+    }
+
+    path:nth-child(8) {
+        stroke-dasharray: 473.7989196777344;
+        stroke-dashoffset: 473.7989196777344;
+        animation: line-anim 2s ease forwards 1.8s;
+        // animation: textfill 3.5s ease forwards 6.5s;
+    }
+
+    path:nth-child(9) {
+        stroke-dasharray: 575.3555297851562;
+        stroke-dashoffset: 575.3555297851562;
+        animation: line-anim 2s ease forwards 2.1s;
+        // animation: textfill 4s ease forwards 7s;
+    }
+
+    path:nth-child(10) {
+        stroke-dasharray: 485.00579833984375;
+        stroke-dashoffset: 485.00579833984375;
+        animation: line-anim 2s ease forwards 2.4s;
+        // animation: textfill 4.5s ease forwards 7.7s;
+    }
+
+    path:nth-child(11) {
+        stroke-dasharray: 423.7745361328125;
+        stroke-dashoffset: 423.7745361328125;
+        animation: line-anim 2s ease forwards 2.9s;
+        // animation: textfill 5s ease forwards 8s;
+    }
+
+    path:nth-child(12) {
+        stroke-dasharray: 506.54345703125;
+        stroke-dashoffset: 506.54345703125;
+        animation: line-anim 2s ease forwards 3.3s;
+        // animation: textfill 5.5s ease forwards 8.5s;
+    }
+
+    path:nth-child(13) {
+        stroke-dasharray: 521.3255004882812;
+        stroke-dashoffset: 521.3255004882812;
+        animation: line-anim 2s ease forwards 3.6s;
+        // animation: textfill 6s ease forwards 9s;
+    }
+
+    path:nth-child(14) {
+        stroke-dasharray: 358.55615234375;
+        stroke-dashoffset: 358.55615234375;
+        animation: line-anim 2s ease forwards 3.9s;
+        // animation: textfill 6.5s ease forwards 9.5s;
+    }
+
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes textfill{
+    
+    to{
+        fill:rgba(206, 153, 6, 0.712);
+    }
+}
+
+
+.forshow {
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+    text-align: left;
+    top: 0;
+    left: 0;
+}
+
+@keyframes rotate-close {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// media queries
+
+@media(max-width: 700px) {
+    
+}
+
+@media(max-width: 500px){
+    
+    section.showcase{
+        .showcase-contents {
+            h2 {
+                margin-top: 180px;
+                font-weight: bold;
+                padding: 20px;
+                font-size: 4rem;
+            }
+    
+            p.intro-pickup {
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.butt{
+    @include mini_btn();
+    border: none;
+}
+a#moreaboutdrivers{
+    @include mini_btn();
+    border: none; 
+}
+.main-nav nav.shrink {
+    background-color: rgb(231, 175, 21);
+    height: 60px;
+    padding-top: 0;
+    font-weight: bold;
+}
+
+nav.shrink.navbar-logo {
+    font-size: 20px;
+    padding: 30px 0px 0px 80px;
+    color: white !important;
+
+}
+
+nav.shrink>li>a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.navbar-logo {
+    border-radius: 25px;
+}
+
+.navbar li a {
+    font-weight: bold;
+    font-size: 15px;
+    color: #030113;
+}
+nav.navbar{
+    background: rgb(231, 175, 21);
+}
+
+.form-group{
+    input#id_schools_academic_calender.clearablefileinput.form-control.custom-file-input,input#id_driver_pic.clearablefileinput.form-control.custom-file-input{
+        opacity: 1;
+        height: auto;
+    }
+    //  color: white;  
+ }
+
+//  student registration
+.student-registration,.contact-kidztransport,.driver-registration,.ourparents,.servingareas,.deteam,.dedicated-drivers,.drivers{
+    margin-top: 90px;
+}
+
+// @media(max-width:567px){
+//     section.showcase{
+//         .showcase-back {
+//             width: 100%;
+//             height: 100vh;
+//             position: absolute;
+//             background: url('../images/animated-school-bus-29 (copy).gif');
+//             background-attachment: fixed;
+//             background-repeat: no-repeat;
+//             background-size: 100%;
+//             background-position: center;
+//             z-index: -1;
+//         }
+//     }
+// }
+
+// for about
+.ceo-img{
+    text-align: left;
+    padding: 20px;
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+    p{
+        padding: 10px;
+        font-weight: bold;
+    }
+}

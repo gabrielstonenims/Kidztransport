@@ -1,0 +1,30 @@
+{% extends "ktrans/base.html"%}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container driver-registration">
+    <!-- <h3 class="text-center">Drivers Registration</h3> -->
+    <div class="jumbotron">
+      <div class="row ">
+        <div class="col-md-8 mr-auto ml-auto mt-2">
+          <div class=" ">
+            <form method="post" id="myform" enctype="multipart/form-data">
+              {% csrf_token %}
+              <fieldset class="form-group">
+                <legend class="border-bottom mb-3 mt-2 text-center" style="">Become a Driver</legend>
+                {{ form|crispy }}
+              </fieldset>
+              <div class="form-group">
+                <button class="butt"  type="submit" id="registerButton">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<br>
+</div>
+
+<br>
+{% endblock %}

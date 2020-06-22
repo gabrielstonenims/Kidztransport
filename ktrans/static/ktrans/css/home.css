@@ -1,0 +1,423 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background: #a3a3a3;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  padding: 20px;
+  font-weight: bold;
+}
+
+section.showcase {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f9d423), to(#ff4e50));
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+}
+
+section.showcase .showcase-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #030113;
+  opacity: 0.55;
+}
+
+section.showcase .showcase-back {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("../images/animated-school-bus-29.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  z-index: -1;
+}
+
+section.showcase .showcase-contents {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+section.showcase .showcase-contents h2 {
+  margin-top: 180px;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 6rem;
+  text-shadow: 4px 4px silver;
+}
+
+section.showcase .showcase-contents p.intro-pickup {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+section.showcase .showcase-contents a {
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(206, 153, 6, 0.959);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: white;
+}
+
+section.showcase .showcase-contents a:hover {
+  background-color: rgba(206, 153, 6, 0.712);
+}
+
+section.whattoknow {
+  padding: 20px;
+}
+
+section.whattoknow .boxes {
+  padding: 20px;
+}
+
+section.whattoknow .boxes img {
+  width: 100%;
+}
+
+section.whattoknow .boxes .knowthis-text {
+  padding: 20px;
+  background: #d3d3d3;
+}
+
+section.whattoknow .boxes .knowthis-text p.areas {
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #db1111;
+          text-decoration-color: #db1111;
+}
+
+section.whattoknow .boxes .knowthis-text a {
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(206, 153, 6, 0.959);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: white;
+}
+
+section.whattoknow .boxes .knowthis-text a:hover {
+  background-color: rgba(206, 153, 6, 0.712);
+}
+
+section.about-us {
+  padding: 20px;
+}
+
+section.about-us ul li a {
+  color: black;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  background: #333;
+  color: #ddd;
+}
+
+footer span {
+  font-weight: bold;
+  color: #d3d3d3;
+}
+
+svg#somelogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+
+svg#somelogo path:nth-child(2) {
+  stroke-dasharray: 538.947265625;
+  stroke-dashoffset: 538.947265625;
+  -webkit-animation: line-anim 2s ease forwards;
+          animation: line-anim 2s ease forwards;
+}
+
+svg#somelogo path:nth-child(3) {
+  stroke-dasharray: 251.4240264892578;
+  stroke-dashoffset: 251.4240264892578;
+  -webkit-animation: line-anim 2s ease forwards 0.3s;
+          animation: line-anim 2s ease forwards 0.3s;
+}
+
+svg#somelogo path:nth-child(4) {
+  stroke-dasharray: 518.4912109375;
+  stroke-dashoffset: 518.4912109375;
+  -webkit-animation: line-anim 2s ease forwards 0.6s;
+          animation: line-anim 2s ease forwards 0.6s;
+}
+
+svg#somelogo path:nth-child(5) {
+  stroke-dasharray: 458.9344787597656;
+  stroke-dashoffset: 458.9344787597656;
+  -webkit-animation: line-anim 2s ease forwards 0.9s;
+          animation: line-anim 2s ease forwards 0.9s;
+}
+
+svg#somelogo path:nth-child(6) {
+  stroke-dasharray: 358.56005859375;
+  stroke-dashoffset: 358.56005859375;
+  -webkit-animation: line-anim 2s ease forwards 1.2s;
+          animation: line-anim 2s ease forwards 1.2s;
+}
+
+svg#somelogo path:nth-child(7) {
+  stroke-dasharray: 521.3292846679688;
+  stroke-dashoffset: 521.3292846679688;
+  -webkit-animation: line-anim 2s ease forwards 1.5s;
+          animation: line-anim 2s ease forwards 1.5s;
+}
+
+svg#somelogo path:nth-child(8) {
+  stroke-dasharray: 473.7989196777344;
+  stroke-dashoffset: 473.7989196777344;
+  -webkit-animation: line-anim 2s ease forwards 1.8s;
+          animation: line-anim 2s ease forwards 1.8s;
+}
+
+svg#somelogo path:nth-child(9) {
+  stroke-dasharray: 575.3555297851562;
+  stroke-dashoffset: 575.3555297851562;
+  -webkit-animation: line-anim 2s ease forwards 2.1s;
+          animation: line-anim 2s ease forwards 2.1s;
+}
+
+svg#somelogo path:nth-child(10) {
+  stroke-dasharray: 485.00579833984375;
+  stroke-dashoffset: 485.00579833984375;
+  -webkit-animation: line-anim 2s ease forwards 2.4s;
+          animation: line-anim 2s ease forwards 2.4s;
+}
+
+svg#somelogo path:nth-child(11) {
+  stroke-dasharray: 423.7745361328125;
+  stroke-dashoffset: 423.7745361328125;
+  -webkit-animation: line-anim 2s ease forwards 2.9s;
+          animation: line-anim 2s ease forwards 2.9s;
+}
+
+svg#somelogo path:nth-child(12) {
+  stroke-dasharray: 506.54345703125;
+  stroke-dashoffset: 506.54345703125;
+  -webkit-animation: line-anim 2s ease forwards 3.3s;
+          animation: line-anim 2s ease forwards 3.3s;
+}
+
+svg#somelogo path:nth-child(13) {
+  stroke-dasharray: 521.3255004882812;
+  stroke-dashoffset: 521.3255004882812;
+  -webkit-animation: line-anim 2s ease forwards 3.6s;
+          animation: line-anim 2s ease forwards 3.6s;
+}
+
+svg#somelogo path:nth-child(14) {
+  stroke-dasharray: 358.55615234375;
+  stroke-dashoffset: 358.55615234375;
+  -webkit-animation: line-anim 2s ease forwards 3.9s;
+          animation: line-anim 2s ease forwards 3.9s;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes textfill {
+  to {
+    fill: rgba(206, 153, 6, 0.712);
+  }
+}
+
+@keyframes textfill {
+  to {
+    fill: rgba(206, 153, 6, 0.712);
+  }
+}
+
+.forshow {
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 20px;
+  position: fixed;
+  z-index: 1;
+  text-align: left;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes rotate-close {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-close {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  section.showcase .showcase-contents h2 {
+    margin-top: 180px;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 4rem;
+  }
+  section.showcase .showcase-contents p.intro-pickup {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+
+.butt {
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(206, 153, 6, 0.959);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: white;
+  border: none;
+}
+
+.butt:hover {
+  background-color: rgba(206, 153, 6, 0.712);
+}
+
+a#moreaboutdrivers {
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(206, 153, 6, 0.959);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: white;
+  border: none;
+}
+
+a#moreaboutdrivers:hover {
+  background-color: rgba(206, 153, 6, 0.712);
+}
+
+.main-nav nav.shrink {
+  background-color: #e7af15;
+  height: 60px;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+nav.shrink.navbar-logo {
+  font-size: 20px;
+  padding: 30px 0px 0px 80px;
+  color: white !important;
+}
+
+nav.shrink > li > a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.navbar-logo {
+  border-radius: 25px;
+}
+
+.navbar li a {
+  font-weight: bold;
+  font-size: 15px;
+  color: #030113;
+}
+
+nav.navbar {
+  background: #e7af15;
+}
+
+.form-group input#id_schools_academic_calender.clearablefileinput.form-control.custom-file-input, .form-group input#id_driver_pic.clearablefileinput.form-control.custom-file-input {
+  opacity: 1;
+  height: auto;
+}
+
+.student-registration, .contact-kidztransport, .driver-registration, .ourparents, .servingareas, .deteam, .dedicated-drivers, .drivers {
+  margin-top: 90px;
+}
+
+.ceo-img {
+  text-align: left;
+  padding: 20px;
+}
+
+.ceo-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+
+.ceo-img p {
+  padding: 10px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=home.css.map */

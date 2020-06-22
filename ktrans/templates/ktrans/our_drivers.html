@@ -1,0 +1,49 @@
+{% extends "ktrans/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container dedicated-drivers">
+    <br>
+    <h3 class="text-center">
+        Our Dedicated Drivers
+    </h3>
+    <br>
+    <!-- <marquee behavior="" direction="">Swipe left or right to view  all drivers</marquee> -->
+    <div class="row text-center">
+        <div class="col-xs-6 col-sm-6 col-md-8 mb-3">
+            <div class="swiper-container latest">
+                <div class="swiper-wrapper" title="Swipe  left or right">
+                   
+                    <div class="swiper-slide">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="{% static 'ktrans/images/alice.jpeg' %}" alt="">
+                        </div>
+                        <div class="details" id="details">
+                            <h4>Ms.Alice(CEO)</h4>
+                            <br>
+                            <p><i class="fa fa-envelope mr-2"></i>alicelarbi@yahoo.com</p>
+                            <p><i class="fa fa-phone mr-2"></i>+1(773)349-0780</p>
+                            <!-- <p><i class="fa fa-home mr-2"></i>{{ post.street_address }} -->
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 mb-3">
+            <br><br>
+            <div class="mabd mb-3">
+                <a id="moreaboutdrivers" class="butt" href="{% url 'drivers' %}">Read more about our drivers</a>
+            </div>
+            <br>
+            <!-- <div class="becomedriver mb-3">
+                <a id="moreaboutdrivers" class="butt mb-3" href="{% url 'register_driver' %}">Become a driver</a>
+            </div> -->
+        </div>
+        <br><br>
+
+    </div>
+    <br>
+</div>
+<br>
+<br>
+{% endblock %}
